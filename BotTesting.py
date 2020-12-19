@@ -32,6 +32,13 @@ async def gaymeter(ctx, player):
         )
     )
 
+@client.command(aliases=['hm'])
+async def hentaimeter(ctx, player):
+    embed=discord.Embed(
+        title='**Hentai Meter**',
+        description=f'{player} is %{random.randint(0, 100)}'
+    )
+    await ctx.send(embed=embed)
 
 @client.command(aliases=['wm'])
 async def weebmeter(ctx, player):
